@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batatabit</title>
+    <title>Batatabit2</title>
    
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="batatabit2.css">
@@ -16,7 +16,7 @@
 </head>
 <body>
     <header >
-        <span class="header_title">
+        <span class="header_title flex">
             <img src="imagenes/batatabit2.png" alt="batatabit_logo">
             <h1>Batatabit</h1>
         </span>
@@ -24,14 +24,14 @@
             <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
             <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias<span class="hidden_text"> del mercado</span>.</p>
         </div>
-            <span class="header_button">
-                <p>Conoce Nuestros Planes</p>
-                <img src="imagenes/arrow_down.png" alt="">
-            </span>
+        <span class="header_button flex">
+            <p>Conoce Nuestros Planes</p>
+            <img src="imagenes/arrow_down.png" alt="">
+        </span>
         
     </header>
     <main >
-        <section class="first_part">
+        <section class="presentation">
             <div class="main_logo">
                 <img src="imagenes/bitcoin.png" alt="bitcoin_logo">
             </div>
@@ -39,148 +39,145 @@
                 <h1>Visibilizamos todas las tasas de cambio.</h1>
                 <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
             </div>
+        </section>
+        
+        <section class="tables">        
+            <div class="vector_right">
+                <img src="imagenes/Vector.png" alt="">
+            </div>
+            <div class="vector_left">
+                <img src="imagenes/vector_left.png" alt="">
+            </div>
             
-            <div class="main_table">
-                <div class="vector_right">
-                    <img src="imagenes/Vector.png" alt="">
-                </div>
+            
+            <table class="monedas">
+                <thead class="title_monedas">
+                    <th>Monedas</th>                        
+                </thead>
+                <tr>
+                    <td class="name">Bitcoin</td>
+                    <td class="price">$1.96 <img src="imagenes/trending-down 1.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td class="name">Ethereum</td>
+                    <td class="price">$0.07 <img src="imagenes/trending-up 1.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td class="name">Ripple</td>
+                    <td class="price">$2.15 <img src="imagenes/trending-down 1.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td class="name">Stellar</td>
+                    <td class="price">$4.96 <img src="imagenes/trending-down 1.png" alt=""></td>
+                </tr>
                 
-                <table class="monedas">
-                    <thead id="title_monedas">
-                        <th>Monedas</th>                        
-                    </thead>
-                    <tr>
-                        <td class="name">Bitcoin</td>
-                        <td class="price">$1.96 <img src="imagenes/trending-down 1.png" alt=""></td>
-                        <!--td class="vector" rowspan="4" ><img src="imagenes/Vector.png" alt=""></td-->
-                    </tr>
-                    <tr>
-                        <td class="name">Ethereum</td>
-                        <td class="price">$0.07 <img src="imagenes/trending-up 1.png" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td class="name">Ripple</td>
-                        <td class="price">$2.15 <img src="imagenes/trending-down 1.png" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td class="name">Stellar</td>
-                        <td class="price">$4.96 <img src="imagenes/trending-down 1.png" alt=""></td>
-                    </tr>
-                    
-                </table>
+               
+            </table>
+            
+            
+            
+            <div class="value_ad flex ad_monedas">
+                <p>Valores en <span style="font-weight: bold;">$ USD</span></p>
+            </div>
+            
+            <table class="comisiones">
+                <thead class="title_comisiones">
+                    <th>Comisiones</th>
+                </thead>
+                <tr>
+                    <td class="name">Bitrade</td>
+                    <td class="price">$ 12.96</td>
+                </tr>
+                <tr>
+                    <td class="name">Bitpreco</td>
+                    <td class="price">$ 13.07</td>
+                </tr>
+                <tr>
+                    <td class="name">Novadax</td>
+                    <td class="price">$ 13.15</td>
+                </tr>
+                <tr>
+                    <td class="name">Coinext</td>
+                    <td class="price">$ 14.96</td>
+                </tr>
                 
-                <div class="vector_left">
-                    <img src="imagenes/vector_left.png" alt="">
-                </div>
-                
-                <div class="value_ad" id="ad_monedas">
-                    <p>Valores en <span style="font-weight: bold;">$ USD</span></p>
-                </div>
-                
-                
-
-                <table class="comisiones">
-                    <thead id="title_comisiones">
-                        <th>Comisiones</th>
-                    </thead>
-                    <tr>
-                        <td class="name">Bitrade</td>
-                        <td class="price">$ 12.96</td>
-                    </tr>
-                    <tr>
-                        <td class="name">Bitpreco</td>
-                        <td class="price">$ 13.07</td>
-                    </tr>
-                    <tr>
-                        <td class="name">Novadax</td>
-                        <td class="price">$ 13.15</td>
-                    </tr>
-                    <tr>
-                        <td class="name">Coinext</td>
-                        <td class="price">$ 14.96</td>
-                    </tr>
-                    
-                </table>
-                <div class="value_ad" id="ad_comisiones">
-                    <p>Valores en <span style="font-weight: bold;">$ USD</span></p>
-                </div>
-
-                
-                
-                
+            </table>
+            <div class="value_ad flex ad_comisiones">
+                <p>Valores en <span style="font-weight: bold;">$ USD</span></p>
             </div>
             
         </section>
         
-        <section class="second_part">
+        <section class="beneficts">
             <div class="header">
-                <h1>Te ayudamos a tomar la mejor decisión<span id="hidden_text">, siempre</span>.</h1>
+                <h1>Te ayudamos a tomar la mejor decisión<span class="hidden_text">, siempre</span>.</h1>
                 <p>Que la incertidumbre en materia de criptomonedas sea cosa del pasado.</p>
             </div>
-            <div class="card_beneficio" id="card1">
-                <img src="imagenes/clock.png" alt="">
-                <h3 class="title">Tiempo real</h3>
-                <p class="description">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
-            </div>
-            <div class="card_beneficio" id="card2">
-                <img src="imagenes/eye.png" alt="">
-                <h3 class="title">No hay tasas escondidas</h3>
-                <p class="description">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
-            </div>
-            <div class="card_beneficio" id="card3">
-                <img src="imagenes/dollar-sign.png" alt="">
-                <h3 class="title">Compara monedas</h3>
-                <p class="description">No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
-            </div>
-            <div class="card_beneficio" id="card4">
-                <img src="imagenes/check-circle 1.png" alt="">
-                <h3 class="title">Información confiable</h3>
-                <p class="description">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+            <div class="cards_beneficio">
+                <div class="card_beneficio card1">
+                    <img src="imagenes/clock.png" alt="">
+                    <h3 class="title">Tiempo real</h3>
+                    <p class="description">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+                </div>
+                <div class="card_beneficio card2">
+                    <img src="imagenes/eye.png" alt="">
+                    <h3 class="title">No hay tasas escondidas</h3>
+                    <p class="description">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
+                </div>
+                <div class="card_beneficio card3">
+                    <img src="imagenes/dollar-sign.png" alt="">
+                    <h3 class="title">Compara monedas</h3>
+                    <p class="description">No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
+                </div>
+                <div class="card_beneficio card4">
+                    <img src="imagenes/check-circle 1.png" alt="">
+                    <h3 class="title">Información confiable</h3>
+                    <p class="description">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+                </div>
             </div>
         </section>
        
-        <section class="third_part">
+        <section class="bitcoinbaby flex">
             <h2 class="title">Conócelo hoy.</h2>
         </section>
         
-        <section class="fourth_part">
+        <section class="promotions">
             <h1>Escoge el plan que mejor se ajuste a ti.</h1>
             <h2>Cualquier plan te da acceso completo a nuestra plataforma.</h2>
-            <div class="cards">
-                
-                <div class="card" id="first_card">
+            <div class="cards flex">
+                <div class="card first_card" >
                     <h2 class="title">Pago Anual</h2>
-                    <div class="price" id="price1">
+                    <div class="price flex price1" >
                         <p class="dollar">$</p>
                         <span class="number">5</span>
                     </div>
                     <p class="description">*Plan básico para mantenerte informado</p>
-                    <button class="select_button" id="button1">
+                    <button class="select_button flex button1" >
                         <p>Escoger este</p>  
                         <img src="imagenes/arrow-right 2.png" alt="">
                     </button>
                 </div>
-                <div class="card" id="second_card">
-                    <span class="highlight">Recomendado</span>
+                <div class="card second_card">
+                    <span class="highlight flex">Recomendado</span>
                     <h2 class="title">Pago Anual</h2>
-                    <div class="price" id="price2">
+                    <div class="price flex price2">
                         <p class="dollar">$</p>
                         <span class="number">49</span>
                     </div>
                     <p class="description">*Ahorras $129 comparado al plan mensual.</p>
-                    <button class="select_button" id="button2"> 
+                    <button class="select_button flex button2"> 
                         <p>Escoger este</p>  
                         <img src="imagenes/arrow-right 1.png" alt="">
                     </button>
                 </div>
-                <div class="card" id="third_card">
+                <div class="card third_card">
                     <h2 class="title">Acceso de por vida</h2>
-                    <div class="price" id="price1">
+                    <div class="price flex price1">
                         <p class="dollar">$</p>
                         <span class="number">99</span>
                     </div>
                     <p class="description">*Ahorras $999+ comparado al plan anual.</p>
-                    <button class="select_button" id="button1">
+                    <button class="select_button flex button1">
                         <p>Escoger este</p>  
                         <img src="imagenes/arrow-right 2.png" alt="">
                     </button>
@@ -188,7 +185,7 @@
             </div>   
         </section>
 
-        <section class="fifth_part">
+        <section class="facts">
             <h1 class="title">¿Preguntas? Aquí estamos para ti.</h1>
             <div class="item">
                 <a href="">Batabit me permite hacer compras en su plataforma?</a>
@@ -215,7 +212,7 @@
             <li><a class="item3" href=""> Hackernews</a></li>
         </ul>
         <ul class="footer_right">
-            <li><span class="batata_logo"><img src="imagenes/batatabit_footer2.png" alt=""></span></li>
+            <li><span class="batata_logo flex"><img src="imagenes/batatabit_footer2.png" alt=""></span></li>
             <li><p class="item4">® Batatabit 2020</p></li>
         </ul>                   
     </footer>
