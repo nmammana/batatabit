@@ -92,7 +92,6 @@ header .header_button p{
 main{
     width: 100%;
     background: var(--offWhite-color);
-    background-color: red;
 }
 
 /***** PRESENTATION *****/
