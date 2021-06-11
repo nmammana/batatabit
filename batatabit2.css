@@ -319,7 +319,7 @@ main .promotions .cards .card{
     /*min-width: 60%;*/
     min-width: 190px;
     max-width: 220px;
-    margin: 3.125em 0.3em;
+    margin: 3.125em 0.5em;
 }
 main .promotions .cards .card .highlight{
     position: absolute;
@@ -510,8 +510,8 @@ footer .footer_right .batata_logo img{
         margin: 0 7em;
     }
     main .beneficts .card_beneficio{
-        margin-left: 4em;
-        margin-right: 4em;
+        margin-left: 5em;
+        margin-right: 5em;
     }
 
     /***** PROMOTIONS *****/
@@ -640,7 +640,8 @@ footer .footer_right .batata_logo img{
 
     /***** BITCOINBABY *****/
     main .bitcoinbaby{
-        max-height: 300px;
+        background: url(imagenes/bitcoinbaby\ 2.png) no-repeat center;
+        background-size: cover;
         align-items: center;
     }
     main .bitcoinbaby .title{
@@ -656,6 +657,13 @@ footer .footer_right .batata_logo img{
         width: 75%;
     }
 }
+
+@media (min-width: 960px){  
+    main .tables {
+        margin: 0 9em;
+    }
+}
+
 
 @media (max-width: 1049px){
     header .header_description p .hidden_text{
@@ -763,6 +771,38 @@ footer .footer_right .batata_logo img{
     }
 }
 
+@media(min-width: 1200px){
+    /***** PRESENTATION *****/
+    main .presentation .main_logo img{
+        width: 10em;
+    }
+
+    /***** *****/
+    main .tables {
+        margin: 0 12em;
+        margin-top: 2em;
+    }
+
+    /***** BENEFICTS *****/
+    main .beneficts .cards_beneficio .card1{
+        margin-left: 3.5em;
+    }
+    main .beneficts .cards_beneficio .card2{
+        margin-right: 3.5em;
+    }
+    main .beneficts .cards_beneficio .card3{
+        margin-left: 3.5em;
+    }
+    main .beneficts .cards_beneficio .card4{
+        margin-right: 3.5em;
+    }
+
+    /***** PROMOTIONS *****/
+    main .promotions .cards .card{
+        margin: 3.125em 0.8em;
+    }
+}
+
 @media (min-width: 1400px){  
     html{
         font-size: 32px;
@@ -782,3 +822,8 @@ footer .footer_right .batata_logo img{
     }
 }
 
+@media (min-width: 1600px){
+    html{
+        font-size: 36px;
+    }
+}
