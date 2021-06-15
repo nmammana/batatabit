@@ -124,6 +124,7 @@ main .tables{
     margin: 1.5em auto;  
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    max-width: 1000px;
 }
 main .tables table{
     margin: auto;
@@ -214,12 +215,11 @@ main .tables .value_ad p{
 /***** BENEFICTS *****/
 main .beneficts{
     width: 100%;
-    max-height: 910px;
-    background: var(--warmBlack-color);   
+    background: var(--warmBlack-color);  
+    padding: 4em 0; 
 }
 main .beneficts .header h1{
     margin: 0;
-    padding-top: 2.7em;
     font: var(--heading1);
     color: var(--white-color);
     text-align: center;
@@ -235,6 +235,7 @@ main .beneficts .header p{
 main .beneficts .cards_beneficio{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    max-width: 1200px;
 }
 main .beneficts .cards_beneficio .card1{
     grid-column: 1/13;
@@ -609,30 +610,31 @@ footer .footer_right .batata_logo img{
     main .beneficts .header h1 .hidden_text{
         display: none;
     }
-    main .beneficts .card_beneficio{
-        margin: 0.5em;
+   
+    main .beneficts .cards_beneficio{
+        margin: 0 2em;
     }
     main .beneficts .cards_beneficio .card1{
         grid-column: 1/7;
         grid-row: 1;
-        margin-left: 2.5em;
     }
     main .beneficts .cards_beneficio .card2{
         grid-column: 7/13;
         grid-row: 1;
-        margin-right: 2.5em;
     }
     main .beneficts .cards_beneficio .card3{
         grid-column: 1/7;
         grid-row: 2;
-        margin-left: 2.5em;
-        margin-bottom: 1.8em;
     }
     main .beneficts .cards_beneficio .card4{
         grid-column: 7/13;
         grid-row: 2;
-        margin-right: 2.5em;
-        margin-bottom: 1.8em;
+    }
+    main .beneficts .cards_beneficio{
+        grid-gap: 1em;
+    }
+    main .beneficts .cards_beneficio .card_beneficio{
+        margin: 0;
     }
     main .beneficts .cards_beneficio .card_beneficio .description{
         font: normal 500 0.625rem/0.7rem DM Sans;
@@ -779,18 +781,10 @@ footer .footer_right .batata_logo img{
     }
 
     /***** BENEFICTS *****/
-    main .beneficts .cards_beneficio .card1{
-        margin-left: 3.5em;
+    main .beneficts .cards_beneficio{
+        margin: 0 auto;
     }
-    main .beneficts .cards_beneficio .card2{
-        margin-right: 3.5em;
-    }
-    main .beneficts .cards_beneficio .card3{
-        margin-left: 3.5em;
-    }
-    main .beneficts .cards_beneficio .card4{
-        margin-right: 3.5em;
-    }
+   
 
     /***** PROMOTIONS *****/
     main .promotions .cards .card{
@@ -815,10 +809,21 @@ footer .footer_right .batata_logo img{
     header .header_button p{
         font: normal bold 18px/22px DM Sans;
     }
+    /***** TABLES *****/
+    main .tables {
+        margin: 0 8em;
+        margin-top: 2em;
+    }
+
 }
 
 @media (min-width: 1600px){
     html{
         font-size: 36px;
+    }
+    /***** TABLES *****/
+    main .tables {
+        margin: 0 auto;
+        margin-top: 2em;
     }
 }
